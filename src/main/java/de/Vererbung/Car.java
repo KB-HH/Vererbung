@@ -2,25 +2,16 @@ package de.Vererbung;
 
 public class Car extends Vehicle {
     protected int doorCount;
-    public Car(){
-        super(brand,model);
-    }
-    public Car(int doorCount) {
-        super(brand, model);
-        super.toString();
-        this.doorCount = doorCount;
-    }
 
-    public Car(String brand, String model, int doorCount){
-        super(brand,model);
+    public Car(String brand, String model, int year,int doorCount){
+        super(brand,model,year);
         this.doorCount= doorCount;
     }
-
     public int getDoorCount() {
         return doorCount;
     }
     public void setDoorCount(int doorCount){
-        doorCount = 4;
+        this.doorCount = doorCount;
     }
     @Override
     public String toString() {

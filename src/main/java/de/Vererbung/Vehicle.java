@@ -1,20 +1,52 @@
 package de.Vererbung;
 
-public class Fahrzeug {
-    protected String Hersteller;
-    protected String Modell;
-    protected int Baujahr;
+public class Vehicle {
+    protected String brand;
+    protected String model;
+    protected int year;
 
-    public Fahrzeug(){
+    public Vehicle(String brand, String model){
     }
 
-    public Fahrzeug(String Hersteller, String Modell,int baujahr){
-        this.Hersteller = Hersteller;
-        this.Modell = Modell;
-        this.baujahr = baujahr;
+    public Vehicle(String brand, String model,int year){
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
     }
         public void startEngine(){
         System.out.println();
-}
+    }
 
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", year=" + year +
+                '}';
+    }
 }
